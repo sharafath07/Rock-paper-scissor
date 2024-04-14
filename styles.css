@@ -7,55 +7,38 @@ body{
 }
 
 .heading{
-    font-size: 50px;
+    font-size: 450%;
     font-weight: bold;
-    text-align: center;
 }
 
 .move-icon{
-    height: 50px;
+    height: 50%;
 }
 .move-button{
     background-color: transparent;
     border: solid white 3px;
-    height: 120px;
-    width: 120px;
-    border-radius: 60px;
-    margin-right: 10px;
+    height: 240px;
+    width: 240px;
+    border-radius: 120px;
+    margin-right: 1%;
     cursor: pointer;
 }
 .js-result{
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 400%;
     font-weight: bold;
 } 
+.js-moves{
+    font-size: 250%;
+}
 .js-score{
     margin-top: 60px;
+    font-size: 300%;
 }
 .reset{
-    padding: 8px 15px;
+    padding: 2% 4%;
     border: none;
     background-color: white;
-    font-size: 15px;
+    font-size: 200%;
     cursor: pointer;
-}
-@media (min-width:300px) and (max-width: 450px) {
-    .heading{
-        font-size: 100px;
-    }
-    .move-button{
-        height: 240px;
-        width: 240px;
-        border-radius: 120px;
-    }
-    .js-result{
-        margin-top: 100px;
-        font-size: 50px;
-    }
-    .js-score{
-        margin-top: 120px;
-    }
-    .reset{
-        font-size: 30px;
-    }
 }
