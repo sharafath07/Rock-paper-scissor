@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sharafath Ahammed V">
+    <meta name="keywords" content="Game, Games, Rock, Paper, Scissors, Rock Paper Scissors, playGame">
+    <meta name="description" content="An advanced type of Rock paper scissors game with auto play mode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="styles.css">
     
@@ -13,22 +18,29 @@
     </header>
    
     <main>
-        <button onclick="playGame('rock')" class="move-button">
-            <img class="move-icon" src="images/rock-emoji.png" alt="Rock">
-        </button>
-    
-        <button onclick="playGame('paper')" class="move-button">
-            <img class="move-icon" src="images/paper-emoji.png" alt="Paper">
-        </button>
-    
-        <button onclick="playGame('scissors')" class="move-button">
-            <img class="move-icon" src="images/scissors-emoji.png" alt="Scissor">
-        </button>
+        <div class="buttons">
+            <button onclick="playGame('rock')" class="move-button">
+                <img class="move-icon" src="images/rock-emoji.png" alt="Rock">
+            </button>
+        
+            <button onclick="playGame('paper')" class="move-button">
+                <img class="move-icon" src="images/paper-emoji.png" alt="Paper">
+            </button>
+        
+            <button onclick="playGame('scissors')" class="move-button">
+                <img class="move-icon" src="images/scissors-emoji.png" alt="Scissor">
+            </button>
+        </div>
      
         <p class="js-result"></p>
         <p class="js-moves"></p>
         <p class="js-score"></p>
-        <button class="reset" onclick="reset()">Reset Score</button>
+
+        <div class="footer">
+            <button class="reset" onclick="reset()">Reset Score</button>
+            <button class="auto-play" onclick="autoPlay()">Auto Play</button>
+        </div>
+
     </main>
     
     <script src="script.js"></script>

@@ -1,44 +1,132 @@
 body{
     color: white;
     font-family: Arial;
-    height: min-content;
+    height: max-content;
     text-align: center;
     background-color: rgb(25, 25, 25);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p{
+    text-wrap: nowrap;
 }
 
 .heading{
     font-size: 450%;
     font-weight: bold;
+    text-decoration: underline white 2.5px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
 }
 
 .move-icon{
-    height: 50%;
+    height: 200px;
+    width: 200px;
 }
 .move-button{
     background-color: transparent;
     border: solid white 3px;
-    height: 240px;
-    width: 240px;
-    border-radius: 120px;
-    margin-right: 1%;
+    padding: 40px 40px 40px 40px;
+    border-radius: 100%;
+    margin-right: 10px;
     cursor: pointer;
 }
 .js-result{
     margin-top: 50px;
     font-size: 400%;
+    margin-bottom: 0;
     font-weight: bold;
 } 
-.js-moves{
-    font-size: 250%;
-}
+.js-moves,
 .js-score{
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 300%;
 }
+.auto-play,
 .reset{
-    padding: 2% 4%;
+    padding: 10px 20px;
     border: none;
+    text-wrap: nowrap;
     background-color: white;
     font-size: 200%;
     cursor: pointer;
+}
+
+@media (min-width: 760px) and (max-width: 1060px) {
+    .heading{
+        font-size: 400%;
+    }
+    .move-icon{
+        height: 150px;
+        width: 150px;
+    }
+
+    .js-moves,
+    .js-score{
+        font-size: 250%;
+    }
+}
+
+@media (min-width: 610px) and (max-width: 760px) {
+    .heading{
+        font-size: 350%;
+    }
+    .move-icon{
+        height: 100px;
+        width: 100px;
+    }
+
+    .js-moves,
+    .js-score{
+        font-size: 200%;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 610px) {
+    .heading{
+        font-size: 300%;
+    }
+    .move-icon{
+        height: 75px;
+        width: 75px;
+    }
+    
+    .move-button{
+        padding: 16px;
+    }
+
+    .js-moves,
+    .js-score{
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 390px) {
+    .heading{
+        font-size: 250%;
+    }
+
+    .move-icon{
+        height: 50px;
+        width: 50px;
+    }
+
+    .move-button{
+        padding: 15px;
+    }
+
+    .js-moves,
+    .js-score{
+        font-size: 100%;
+    }
 }
